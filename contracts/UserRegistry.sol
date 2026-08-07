@@ -6,10 +6,10 @@ pragma solidity ^0.8.24;
  * @notice Registers platform users and assigns them to predefined user groups.
  *
  * Group IDs:
- * 1 = dAIEdge
- * 2 = NoE
- * 3 = AIoD
- * 4 = Other
+ * 1 = Group1
+ * 2 = Group2
+ * 3 = Group3
+ * 4 = Group4
  *
  * Only the platform administrator can register users,
  * change groups, activate users, or deactivate users.
@@ -17,10 +17,10 @@ pragma solidity ^0.8.24;
 contract UserRegistry {
     enum UserGroup {
         None,       // 0
-        dAIEdge,    // 1
-        NoE,        // 2
-        AIoD,       // 3
-        Other       // 4
+        Group1,     // 1
+        Group2,     // 2
+        Group3,     // 3
+        Group4      // 4
     }
 
     struct User {
@@ -83,7 +83,7 @@ contract UserRegistry {
      * @notice Register a new user.
      * @param userAddress Ethereum address belonging to the user.
      * @param userId Off-chain user identifier converted to bytes32.
-     * @param group Group ID: 1=dAIEdge, 2=NoE, 3=AIoD, 4=Other.
+     * @param group Group ID: 1=Group1, 2=Group2, 3=Group3, 4=Group4.
      */
     function registerUser(
         address userAddress,

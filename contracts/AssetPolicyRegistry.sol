@@ -12,10 +12,10 @@ pragma solidity ^0.8.24;
  * 3 = AIModel
  *
  * User-group array order:
- * index 0 = Group 1: dAIEdge
- * index 1 = Group 2: NoE
- * index 2 = Group 3: AIoD
- * index 3 = Group 4: Other
+ * index 0 = Group1
+ * index 1 = Group2
+ * index 2 = Group3
+ * index 3 = Group4
  *
  * Actions are represented as bitmasks:
  *

@@ -7,10 +7,10 @@ pragma solidity ^0.8.24;
  *         across hardware, datasets, and AI models.
  *
  * User Groups:
- * 1 = dAIEdge
- * 2 = NoE
- * 3 = AIoD
- * 4 = Other
+ * 1 = Group1
+ * 2 = Group2
+ * 3 = Group3
+ * 4 = Group4
  *
  * Asset Types:
  * 1 = Hardware
@@ -22,10 +22,10 @@ pragma solidity ^0.8.24;
 contract PlatformEntitlementRegistry {
     enum UserGroup {
         None,       // 0
-        dAIEdge,    // 1
-        NoE,        // 2
-        AIoD,       // 3
-        Other       // 4
+        Group1,     // 1
+        Group2,     // 2
+        Group3,     // 3
+        Group4      // 4
     }
 
     enum AssetType {

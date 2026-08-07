@@ -27,13 +27,13 @@ python3 compiler/odrl_compiler.py \
   --output /tmp/H9_Policy.onchain.json
 
 python3 compiler/odrl_compiler.py \
-  compiler/examples/User_dAIedge.json \
+  compiler/examples/User_Group1.json \
   --kind entitlement \
   --asset-type hardware \
-  --output /tmp/User_dAIedge.onchain.json
+  --output /tmp/User_Group1.onchain.json
 
 diff -u compiler/examples/H9_Policy.onchain.json /tmp/H9_Policy.onchain.json
-diff -u compiler/examples/User_dAIedge.onchain.json /tmp/User_dAIedge.onchain.json
+diff -u compiler/examples/User_Group1.onchain.json /tmp/User_Group1.onchain.json
 ```
 
 No `diff` output means the generated artifacts match the committed references.
@@ -42,7 +42,7 @@ No `diff` output means the generated artifacts match the committed references.
 
 | Example | Expected result |
 |---|---|
-| `User_dAIedge.json` | group `1`, asset type `1`, action mask `7` |
+| `User_Group1.json` | group `1`, asset type `1`, action mask `7` |
 | `H9_Policy.json` | permission masks `[3,3,3,1]`, prohibition masks `[0,0,0,2]`, effective masks `[3,3,3,1]` |
 
 Run the automated checks:
@@ -64,4 +64,3 @@ For paper review or artifact evaluation, report:
 - whether the policy and metadata URIs are archival and publicly retrievable.
 
 The supplied IPFS URI is a placeholder and must be replaced before publication if the paper claims policy retrievability.
-

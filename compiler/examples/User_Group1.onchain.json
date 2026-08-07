@@ -1,7 +1,7 @@
 {
   "policyKind": "platformEntitlement",
-  "sourcePolicyUid": "urn:vlab:policy:dAIEdge_user:sample",
-  "policyHash": "0xf66d059bcad5824bfafec1aa54bb8992df155626ffdbc351092de764ffa12705",
+  "sourcePolicyUid": "urn:vlab:policy:group1_user:sample",
+  "policyHash": "0x2131fb5f4586985d5e6574aed8ddc575d9dace00e702c36e3aad9d8cfbfe2845",
   "mapping": {
     "userGroup": 1,
     "assetType": 1,

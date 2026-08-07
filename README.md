@@ -43,7 +43,7 @@ The compiler keeps the complete ODRL JSON off-chain and emits hashes, identifier
 
 | Concept | Values |
 |---|---|
-| User group | `1=dAIEdge`, `2=NoE`, `3=AIoD`, `4=Other` |
+| User group | `1=Group1`, `2=Group2`, `3=Group3`, `4=Group4` |
 | Asset type | `1=Hardware`, `2=Dataset`, `3=AIModel` |
 | Action bits | `TYPE1=1`, `TYPE2=2`, `TYPE3=4` |
 
@@ -74,10 +74,10 @@ Compile the included platform entitlement:
 
 ```bash
 python3 compiler/odrl_compiler.py \
-  compiler/examples/User_dAIedge.json \
+  compiler/examples/User_Group1.json \
   --kind entitlement \
   --asset-type hardware \
-  --output /tmp/User_dAIedge.onchain.json
+  --output /tmp/User_Group1.onchain.json
 ```
 
 Run the regression tests:
@@ -87,6 +87,8 @@ python3 -m unittest discover -s tests -v
 ```
 
 The committed `.onchain.json` files are reference outputs. See [Reproducibility](docs/REPRODUCIBILITY.md) for exact verification commands and [Deployment](docs/DEPLOYMENT.md) for contract deployment and initialization.
+
+The supplied reference contract addresses are listed in the [deployment guide](docs/DEPLOYMENT.md). Their network and chain ID still need to be recorded for independent verification.
 
 ## Scope and limitations
 
@@ -99,4 +101,3 @@ The committed `.onchain.json` files are reference outputs. See [Reproducibility]
 ## License and citation
 
 The code is released under the [MIT License](LICENSE). Citation metadata is provided in [CITATION.cff](CITATION.cff); replace its placeholder author and paper fields before archival publication.
-

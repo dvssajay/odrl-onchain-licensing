@@ -23,9 +23,9 @@ class CompilerTests(unittest.TestCase):
             return json.load(handle)
 
     def test_entitlement_matches_reference(self):
-        policy = self.load("User_dAIedge.json")
+        policy = self.load("User_Group1.json")
         actual = COMPILER.compile_entitlement(policy, "hardware")
-        self.assertEqual(actual, self.load("User_dAIedge.onchain.json"))
+        self.assertEqual(actual, self.load("User_Group1.onchain.json"))
 
     def test_asset_policy_matches_reference(self):
         policy = self.load("H9_Policy.json")
@@ -57,7 +57,7 @@ class CompilerTests(unittest.TestCase):
                 [
                     sys.executable,
                     str(COMPILER_PATH),
-                    str(EXAMPLES / "User_dAIedge.json"),
+                    str(EXAMPLES / "User_Group1.json"),
                     "--kind",
                     "entitlement",
                     "--asset-type",
@@ -72,10 +72,9 @@ class CompilerTests(unittest.TestCase):
             self.assertEqual(completed.returncode, 0, completed.stderr)
             self.assertEqual(
                 json.loads(output.read_text(encoding="utf-8")),
-                self.load("User_dAIedge.onchain.json"),
+                self.load("User_Group1.onchain.json"),
             )
 
 
 if __name__ == "__main__":
     unittest.main()
-

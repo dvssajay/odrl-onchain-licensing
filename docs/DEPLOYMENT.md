@@ -23,7 +23,22 @@ Register a user with `UserRegistry.registerUser(userAddress, userId, group)`. Th
 PlatformEntitlementRegistry.createEntitlement(group, assetType, actionMask)
 ```
 
-For `User_dAIedge.json`, the reference values are `(1, 1, 7)`.
+For `User_Group1.json`, the reference values are `(1, 1, 7)`.
+
+## Reference deployment
+
+The following addresses were supplied with the research artifact. The network and chain ID were not supplied and must be added before readers can independently locate or verify this deployment. Three addresses are valid 20-byte hexadecimal values; the `PlatformEntitlementRegistry` value in the supplied deployment table needs correction before publication.
+
+| Step | Contract | Sender role | Contract address |
+|---:|---|---|---|
+| 1 | `UserRegistry` | `PlatformAdmin` | `0x5141aacde95a19f23eeaf8a9a85e2d2f8a3ec6e8` |
+| 2 | `PlatformEntitlementRegistry` | `PlatformAdmin` | **Needs confirmation** — supplied value has 41 hexadecimal digits |
+| 3 | `AssetPolicyRegistry` | `PlatformAdmin` | `0x06c9ab78648e189a26729dec5158925f039a8482` |
+| 4 | `AuthorizationAndLicenseRegistry` | `PlatformAdmin` | `0xe40492b9eeff97d469a32fc0c1a77dbdd9c7406a` |
+
+Because the public artifact replaces project-specific enum labels with neutral `Group1`–`Group4` labels, recompilation may produce different Solidity metadata from the originally deployed source even though the numeric enum values and runtime authorization behavior are unchanged.
+
+For an anonymous submission, confirm that publishing these addresses is acceptable: a public or shared chain explorer may reveal the deployer account and related transaction history.
 
 ## 4. Register an asset and policy
 
@@ -76,4 +91,3 @@ Retrieve the license with `getLicense(licenseId)` or `getLicenseByRequest(reques
 - Policy and entitlement updates increment versions; report the versions used in each experiment.
 - Store durable content at `policyURI` and `metadataURI`; the contracts do not guarantee availability.
 - Use unique request IDs derived from the surrounding application workflow.
-

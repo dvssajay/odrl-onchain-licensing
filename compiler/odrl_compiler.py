@@ -4,7 +4,7 @@ ODRL-to-on-chain compiler for the four-contract authorization prototype.
 
 Supported inputs
 ----------------
-1. Platform/user entitlement policies, e.g. User_dAIedge.json
+1. Platform/user entitlement policies, e.g. User_Group1.json
 2. Asset-owner policies, e.g. H9_Policy.json
 
 The compiler does not deploy anything. It produces deterministic JSON values that
