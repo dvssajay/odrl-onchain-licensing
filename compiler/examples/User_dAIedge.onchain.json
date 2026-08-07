@@ -1,0 +1,23 @@
+{
+  "policyKind": "platformEntitlement",
+  "sourcePolicyUid": "urn:vlab:policy:dAIEdge_user:sample",
+  "policyHash": "0xf66d059bcad5824bfafec1aa54bb8992df155626ffdbc351092de764ffa12705",
+  "mapping": {
+    "userGroup": 1,
+    "assetType": 1,
+    "actionMask": 7
+  },
+  "remixArguments": {
+    "group": 1,
+    "assetType": 1,
+    "actionMask": 7
+  },
+  "decoded": {
+    "group": "Group1",
+    "allowedActionBits": [
+      1,
+      2,
+      4
+    ]
+  }
+}

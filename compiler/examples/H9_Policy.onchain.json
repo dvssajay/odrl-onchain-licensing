@@ -1,0 +1,85 @@
+{
+  "policyKind": "assetPolicy",
+  "sourcePolicyUid": "urn:vlab:policy:9:Kendryte_K210",
+  "target": "urn:vlab:MCU:Kendryte_K210",
+  "assetId": "0xef495803ff24f991ca9ea5edf28a4e1fc7522989bc6dae3c9209431ae4b83fbd",
+  "assetType": 1,
+  "policyHash": "0xc4c9ed8ba7b66c14d72638b90a9a3060deca73ac65d300a2a8525b700658548e",
+  "policyURI": "ipfs://replace-with-real-cid",
+  "permissionMasks": [
+    3,
+    3,
+    3,
+    1
+  ],
+  "prohibitionMasks": [
+    0,
+    0,
+    0,
+    2
+  ],
+  "effectiveMasks": [
+    3,
+    3,
+    3,
+    1
+  ],
+  "validFrom": 0,
+  "validUntil": 0,
+  "remixArguments": {
+    "assetId": "0xef495803ff24f991ca9ea5edf28a4e1fc7522989bc6dae3c9209431ae4b83fbd",
+    "policyHash": "0xc4c9ed8ba7b66c14d72638b90a9a3060deca73ac65d300a2a8525b700658548e",
+    "policyURI": "ipfs://replace-with-real-cid",
+    "permissionMasks": [
+      3,
+      3,
+      3,
+      1
+    ],
+    "prohibitionMasks": [
+      0,
+      0,
+      0,
+      2
+    ],
+    "validFrom": 0,
+    "validUntil": 0
+  },
+  "decoded": {
+    "Group1": {
+      "permissionMask": 3,
+      "prohibitionMask": 0,
+      "effectiveMask": 3,
+      "effectiveActionBits": [
+        1,
+        2
+      ]
+    },
+    "Group2": {
+      "permissionMask": 3,
+      "prohibitionMask": 0,
+      "effectiveMask": 3,
+      "effectiveActionBits": [
+        1,
+        2
+      ]
+    },
+    "Group3": {
+      "permissionMask": 3,
+      "prohibitionMask": 0,
+      "effectiveMask": 3,
+      "effectiveActionBits": [
+        1,
+        2
+      ]
+    },
+    "Group4": {
+      "permissionMask": 1,
+      "prohibitionMask": 2,
+      "effectiveMask": 1,
+      "effectiveActionBits": [
+        1
+      ]
+    }
+  }
+}

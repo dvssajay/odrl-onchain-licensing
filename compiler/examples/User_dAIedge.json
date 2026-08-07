@@ -1,0 +1,40 @@
+{
+  "@context": "http://www.w3.org/ns/odrl.jsonld",
+  "uid": "urn:vlab:policy:dAIEdge_user:sample",
+  "type": "Set",
+  "permission": [
+    {
+      "target": "urn:vlab:service:benchmarking",
+      "action": [
+        {
+          "type": "use",
+          "refinement": {
+            "type": "serviceType",
+            "value": "TYPE1"
+          }
+        },
+        {
+          "type": "use",
+          "refinement": {
+            "type": "serviceType",
+            "value": "TYPE2"
+          }
+        },
+        {
+          "type": "use",
+          "refinement": {
+            "type": "serviceType",
+            "value": "TYPE3"
+          }
+        }
+      ]
+    }
+  ],
+  "constraint": [
+    {
+      "leftOperand": "userGroup",
+      "operator": "eq",
+      "rightOperand": "Group1"
+    }
+  ]
+}

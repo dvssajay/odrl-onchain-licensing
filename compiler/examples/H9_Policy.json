@@ -1,0 +1,91 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/odrl.jsonld",
+    {
+      "vlab": "http://vlab.example.org/odrl/metadata#"
+    }
+  ],
+  "uid": "urn:vlab:policy:9:Kendryte_K210",
+  "type": "Set",
+  "vlab:metadata": {
+    "target_type_uid": "9",
+    "name": "Kendryte K210",
+    "target_type": "MCU"
+  },
+  "permission": [
+    {
+      "target": "urn:vlab:MCU:Kendryte_K210",
+      "action": [
+        {
+          "type": "allowService",
+          "refinement": {
+            "type": "serviceType",
+            "value": "TYPE1"
+          }
+        },
+        {
+          "type": "allowService",
+          "refinement": {
+            "type": "serviceType",
+            "value": "TYPE2"
+          }
+        }
+      ],
+      "constraint": [
+        {
+          "leftOperand": "allowedUserGroups",
+          "operator": "eq",
+          "rightOperand": [
+            "Group1",
+            "Group2",
+            "Group3"
+          ]
+        }
+      ]
+    },
+    {
+      "target": "urn:vlab:MCU:Kendryte_K210",
+      "action": [
+        {
+          "type": "allowService",
+          "refinement": {
+            "type": "serviceType",
+            "value": "TYPE1"
+          }
+        }
+      ],
+      "constraint": [
+        {
+          "leftOperand": "allowedUserGroups",
+          "operator": "eq",
+          "rightOperand": [
+            "Group4"
+          ]
+        }
+      ]
+    }
+  ],
+  "prohibition": [
+    {
+      "target": "urn:vlab:MCU:Kendryte_K210",
+      "action": [
+        {
+          "type": "allowService",
+          "refinement": {
+            "type": "serviceType",
+            "value": "TYPE2"
+          }
+        }
+      ],
+      "constraint": [
+        {
+          "leftOperand": "allowedUserGroups",
+          "operator": "eq",
+          "rightOperand": [
+            "Group4"
+          ]
+        }
+      ]
+    }
+  ]
+}
