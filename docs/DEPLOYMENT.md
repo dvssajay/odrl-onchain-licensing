@@ -32,7 +32,7 @@ The following addresses were supplied with the research artifact. The network an
 | Step | Contract | Sender role | Contract address |
 |---:|---|---|---|
 | 1 | `UserRegistry` | `PlatformAdmin` | `0x5141aacde95a19f23eeaf8a9a85e2d2f8a3ec6e8` |
-| 2 | `PlatformEntitlementRegistry` | `PlatformAdmin` | **Needs confirmation** — supplied value has 41 hexadecimal digits |
+| 2 | `PlatformEntitlementRegistry` | `PlatformAdmin` | `0xFA3FAd0431227396e4497868bca0DcC3Ccb6a447` |
 | 3 | `AssetPolicyRegistry` | `PlatformAdmin` | `0x06c9ab78648e189a26729dec5158925f039a8482` |
 | 4 | `AuthorizationAndLicenseRegistry` | `PlatformAdmin` | `0xe40492b9eeff97d469a32fc0c1a77dbdd9c7406a` |
 

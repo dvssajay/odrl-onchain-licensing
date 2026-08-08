@@ -63,4 +63,3 @@ For paper review or artifact evaluation, report:
 - transactions and emitted events used for evaluation;
 - whether the policy and metadata URIs are archival and publicly retrievable.
 
-The supplied IPFS URI is a placeholder and must be replaced before publication if the paper claims policy retrievability.
